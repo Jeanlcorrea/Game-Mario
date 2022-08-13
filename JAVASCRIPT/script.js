@@ -34,3 +34,7 @@ const loop = setInterval(() => {
 },10)
 
 document.addEventListener('keydown' , jump);
+
+function visualizar(pagina) {
+    document.body.setAttribute('page', pagina)
+}

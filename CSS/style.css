@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
+
+#telainicial {
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.play {
+    width: 120px;
+    height: 120px;
+    margin-bottom: -110px;
+    margin-left: 390px;
+}
+
 .game-board {
     width: 80%;
     height: 500px;
@@ -14,6 +30,11 @@
     background: linear-gradient(#87CEEB , #E0F6FF);
 }
 
+#telainicial {display: none;}
+#jogando {display: none;}
+
+body[page=telainicial] #telainicial {display: block; color: aliceblue;} 
+body[page=jogando] #jogando {display: block;}
 
 .pipe {
     position: absolute;
